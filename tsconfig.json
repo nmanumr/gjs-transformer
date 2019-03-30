@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "dist",
+        "plugins": [
+            {
+                "transform": "./src/transformers/transformer.ts"
+            }
+        ]
+    },
+    "include": ["src/**/*", "node_modules/ttypescript/**/*"],
+    "exclude": ["src/transformers/**/*", "node_modules/@types/**/*"]
+}
